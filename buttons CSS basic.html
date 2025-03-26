@@ -1,0 +1,86 @@
+<!--Need to use CSS Basic code for the better result of webpage
+* CSS = Cascading Style Sheets (Change the appearance of HTML elements)
+* Style element <style>button </style>
+* button - CSS Selector = Which elements we're targeting
+* background-color, color, border, hight, width, border-radius, cursor  = CSS Property
+* To change the text color use the CSS Property called color
+
+****************** Lesson 2: CSS Basic ********************
+-->
+<style>
+  .subscribe-button  {
+  background-color: red;
+  color: white;
+  border: none;
+  height: 36px;
+  width: 106px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.15s; /*The transition will be smooth with opacity */
+}
+.subscribe-button:hover {/*This colon hover is know as a Pseudo Class*/
+  /*It basically add extra situation in a certain situation. So in this its going to add extra styles when we hover*/
+  background-color: green;
+  opacity:0.6;
+}
+.subscribe-button:active {/*The active pseudo class aticated when we click on the element.*/
+  /*color: red;*/
+  opacity:0.3;
+}
+.join-button {
+background-color: white;
+border-color: rgb(65, 41, 244);
+border-style: solid;
+border-width: 1px;
+color: rgb(31, 11, 183);
+height: 36px;
+width: 62px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.15s,
+  color 0.15s;
+}
+
+.join-button:hover {
+background-color: rgb(31, 11, 183);
+color: white;
+}
+.join-button:active {
+opacity: 0.7;
+}
+.tweet-button {
+background-color: rgb(90, 156, 242);
+color: white;
+border: none;
+height: 36px;
+width: 75px;
+cursor: pointer;
+border-radius: 18px;
+font-weight: bold;
+font-size: 15px;
+margin-inline-start: 8px;
+/*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); This applied to entire button.
+The first value is Horizontal
+The second value is Vertical
+The third value is blur
+The fourth value is color*/
+transition: box-shadow 0.30s;
+}
+
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+<button class="join-button">
+  JOIN
+</button>
+<button class="tweet-button">
+  Tweet
+</button>
+
